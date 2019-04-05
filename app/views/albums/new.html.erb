@@ -1,0 +1,17 @@
+<h1>Enter a new album to the database!</h1>
+<form action="<%=albums_url%>" method="POST">
+<input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>" >
+    <label>Title:
+        <input type="text" name="album[title]" value="">
+    </label>
+    <label>Year:
+        <input type="text" name="album[yr]" value="">
+    </label>
+    <label>Band:
+        <input type="text" name="album[band_id]" value="">
+    </label>
+    <label>Live?:
+        <input type="text" name="band[live]" value="">
+    </label>
+    <input type="submit" value="Add album">
+</form>

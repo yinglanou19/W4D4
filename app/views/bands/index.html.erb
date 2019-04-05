@@ -1,0 +1,11 @@
+<h1>All the bands in the database</h1>
+
+<ul>
+<% @bands.each do |band| %>
+    <ul>
+    <li> <%= band.name %>  </li>
+    <li> <a href="<%= edit_band_url(band) %>">Edit this band</a> </li>
+    </ul>
+<% end %>
+</ul>
+
