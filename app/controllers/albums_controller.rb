@@ -20,7 +20,12 @@ class AlbumsController < ApplicationController
         end
     end
 
+    
+
     def album_params
         params.require(:album).permit(:band_id, :title, :yr, :live)
     end
+
+
+
 end

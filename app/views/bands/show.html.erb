@@ -11,4 +11,11 @@
         <input type="hidden" name="_method" value="DELETE">
         <input type="submit" value="Delete band">
     </form>
+    <br>
+    <p>Albums for this band:</p>
+    <ul>
+    <% @band.albums.each do |album| %>
+        <li> <%=album.title%>, <%=album.yr%> </li>
+    <% end %>
+    </ul>
 <% end %>
